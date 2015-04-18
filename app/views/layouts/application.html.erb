@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iframe</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="player" data-turbolinks-permanent>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dz2iNkqFoKo" frameborder="0" allowfullscreen></iframe>
+</div>
+<%= yield %>
+
+</body>
+</html>
